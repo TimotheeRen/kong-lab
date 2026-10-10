@@ -11,3 +11,7 @@ spec:
           containers:
             - name: proxy
               image: kong:3.9
+        volumes:
+          - name: grpc-proto
+            configMap:
+              name: grpc-proto

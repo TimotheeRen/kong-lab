@@ -5,3 +5,9 @@ resources:
   - gateway.yaml
   - gateway-class.yaml
   - gateway-configuration.yaml
+  - gateway-plugin-grpc.yaml
+
+configMapGenerator:
+  - name: grpc-proto
+    files:
+      - proto/service.proto
