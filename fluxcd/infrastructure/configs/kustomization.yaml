@@ -9,5 +9,6 @@ resources:
 
 configMapGenerator:
   - name: grpc-proto
+    namespace: default
     files:
       - proto/service.proto
