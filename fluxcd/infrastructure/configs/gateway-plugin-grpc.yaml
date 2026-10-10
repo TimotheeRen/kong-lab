@@ -1,4 +1,4 @@
-apiVersion: gateway.networking.k8s.io/v1
+apiVersion: configuration.konghq.com/v1
 kind: KongClusterPlugin
 metadata:
   name: grpc-gateway
