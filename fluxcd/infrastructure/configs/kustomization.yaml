@@ -13,4 +13,4 @@ configMapGenerator:
     options:
       disableNameSuffixHash: true
     files:
-      - proto/service.proto
+      - proto/
