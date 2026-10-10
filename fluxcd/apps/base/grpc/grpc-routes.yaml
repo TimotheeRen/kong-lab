@@ -5,7 +5,7 @@ metadata:
   namespace: default
 spec:
   parentRefs:
-    - name: envoy-gateway
+    - name: kong-gateway
   rules:
     - backendRefs:
         - kind: Service
