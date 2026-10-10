@@ -10,7 +10,7 @@ pub struct ServiceImpl {}
 impl Service for ServiceImpl {
     async fn get_info(
         &self,
-        request: Request<GetInfoRequest>,
+        _request: Request<GetInfoRequest>,
     ) -> Result<Response<GetInfoResponse>, Status> {
         println!("Got a request");
         let reply = GetInfoResponse {
