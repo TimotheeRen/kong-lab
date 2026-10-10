@@ -37,7 +37,6 @@ spec:
           configMap:
             name: grpc-proto
       userDefinedVolumeMounts:
-        - name: grpc-proto-volume"
+        - name: grpc-proto
           mountPath: /usr/local/kong/proto/service.proto
           subPath: service.proto
-
