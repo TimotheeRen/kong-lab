@@ -10,4 +10,4 @@ spec:
         spec:
           containers:
             - name: proxy
-              image: kind:3.9
+              image: kong:3.9
