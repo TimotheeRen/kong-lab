@@ -2,8 +2,14 @@ syntax = "proto3";
 
 package service;
 
+import "google/api/annotations.proto";
+
 service Service {
-  rpc GetInfo(GetInfoRequest) returns (GetInfoResponse);
+  rpc GetInfo(GetInfoRequest) returns (GetInfoResponse) {
+    option (google.api.http) = {
+      get: "/grpc/info/{username}/{email}"
+    };
+  }
 }
 
 message GetInfoRequest {
