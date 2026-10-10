@@ -8,6 +8,13 @@ spec:
     deployment:
       podTemplateSpec:
         spec:
+          volumes:
+            - name: grpc-proto
+              configMap:
+                name: grpc-proto
           containers:
             - name: proxy
               image: kong:3.9
+              volumeMounts:
+                - name: grpc-proto
+                  mountPath: /usr/local/kong/proto
