@@ -4,3 +4,8 @@ metadata:
   name: kong-gateway-class
 spec:
   controllerName: konghq.com/gateway-operator
+  parametersRef:
+    group: gateway-operator.konghq.com
+    kind: GatewayConfiguration
+    name: kong-gateway-configuration
+    namespace: default
