@@ -33,11 +33,11 @@ spec:
       kong: 
         enabled: true
       userDefinedVolumes:
-        - name: "grpc-proto"
+        - name: grpc-proto
           configMap:
-            name: "grpc-proto"
+            name: grpc-proto
       userDefinedVolumeMounts:
-        - name: "grpc-proto-volume"
-          mountPath: "/etc/kong/proto/service.proto"
-          subPath: "service.proto"
+        - name: grpc-proto-volume"
+          mountPath: /usr/local/kong/proto/service.proto
+          subPath: service.proto
 

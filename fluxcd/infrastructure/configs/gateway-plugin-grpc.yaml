@@ -8,5 +8,5 @@ metadata:
   labels:
     global: 'true'
 config:
-  proto: /etc/kong/proto/service.proto
+  proto: /usr/local/kong/proto/service.proto
 plugin: grpc-gateway
