@@ -10,5 +10,3 @@ options:
     extraArgs:
       - arg: --disable=traefik
         nodeFilters: [server:*]
-      - arg: --disable=servicelb
-        nodeFilters: [server:*]
