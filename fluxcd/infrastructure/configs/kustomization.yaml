@@ -10,5 +10,7 @@ resources:
 configMapGenerator:
   - name: grpc-proto
     namespace: default
+    options:
+      disableNameSuffixHash: true
     files:
       - proto/service.proto
