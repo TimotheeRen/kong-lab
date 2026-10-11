@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package service;
 
-import "google/api/annotations.proto";
+import "annotations.proto";
 
 service Service {
   rpc GetInfo(GetInfoRequest) returns (GetInfoResponse) {

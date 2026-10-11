@@ -14,5 +14,5 @@ configMapGenerator:
       disableNameSuffixHash: true
     files:
       - proto/service.proto
-      - proto/google/api/annotations.proto
-      - proto/google/api/http.proto
+      - proto/annotations.proto
+      - proto/http.proto
