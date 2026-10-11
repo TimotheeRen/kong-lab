@@ -1,4 +1,5 @@
 apiVersion: configuration.konghq.com/v1
+apiVersion: configuration.konghq.com/v1
 kind: KongPlugin
 metadata:
   name: grpc-gateway
@@ -7,6 +8,6 @@ metadata:
     kubernetes.io/ingress.class: kong
 config:
   proto: /usr/local/kong/proto/service.proto
-  route:
-    id: grpc
+route:
+  id: grpc
 plugin: grpc-gateway
