@@ -5,6 +5,7 @@ metadata:
   namespace: default
   annotations:
     konghq.com/plugins: grpc-gateway
+    konghq.com/protocol: grpc
 spec:
   parentRefs:
     - name: kong-gateway
