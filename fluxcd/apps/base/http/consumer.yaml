@@ -1,4 +1,4 @@
-apiVersion: configuration.kongq.com/v1
+apiVersion: configuration.konghq.com/v1
 kind: KongConsumer
 metadata:
   name: client
