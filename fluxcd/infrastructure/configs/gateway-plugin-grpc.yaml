@@ -1,5 +1,4 @@
 apiVersion: configuration.konghq.com/v1
-apiVersion: configuration.konghq.com/v1
 kind: KongPlugin
 metadata:
   name: grpc-gateway
