@@ -16,6 +16,7 @@
     pkgs.kubectl
     pkgs.k9s
     pkgs.protobuf
+    pkgs.grpcurl 
   ];
 
   languages.rust = {
