@@ -1,0 +1,10 @@
+apiVersion: configuration.kongq.com/v1
+kind: KongConsumer
+metadata:
+  name: client
+  namespace: default
+  annotations:
+    kubernetes.io/ingress.class: kong
+username: user
+credentials:
+  - jwt-token

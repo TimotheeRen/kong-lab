@@ -1,0 +1,11 @@
+apiVersion: configuration.konghq.com/v1
+kind: KongPlugin
+metadata:
+  name: jwt-plugin
+  namespace: default
+  annotations:
+    kubernetes.io/ingress.class: kong
+config:
+  cookie_names:
+    - jwt
+plugin: jwt
