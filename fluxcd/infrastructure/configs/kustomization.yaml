@@ -7,6 +7,7 @@ resources:
   - gateway-configuration.yaml
   - gateway-plugin-grpc.yaml
   - gateway-plugin-jwt.yaml
+  - consumer.yaml
 
 configMapGenerator:
   - name: grpc-proto
