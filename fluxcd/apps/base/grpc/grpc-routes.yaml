@@ -3,8 +3,6 @@ kind: GRPCRoute
 metadata:
   name: grpc
   namespace: default
-  annotations:
-    konghq.com/plugins: grpc-gateway
 spec:
   parentRefs:
     - name: kong-gateway
