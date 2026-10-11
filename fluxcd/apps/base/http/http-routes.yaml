@@ -4,7 +4,7 @@ metadata:
   name: http
   namespace: default
   annotations:
-    konghq.com/plugins: jwt
+    konghq.com/plugins: jwt-plugin
 spec:
   parentRefs:
     - name: kong-gateway
