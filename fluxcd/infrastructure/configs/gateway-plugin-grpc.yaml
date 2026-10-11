@@ -7,6 +7,4 @@ metadata:
     kubernetes.io/ingress.class: kong
 config:
   proto: /usr/local/kong/proto/service.proto
-route: 
-  id: grpc
 plugin: grpc-gateway
