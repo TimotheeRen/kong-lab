@@ -10,4 +10,4 @@ spec:
       - name: internal
         port: 9092
         type: internal
-        tls: true
+        tls: false
