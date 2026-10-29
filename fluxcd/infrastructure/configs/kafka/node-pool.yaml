@@ -8,6 +8,5 @@ spec:
   roles: 
     - broker
     - controlelr
-  storage: 
-  - id: 0
+  storage:
     type: ephemeral
