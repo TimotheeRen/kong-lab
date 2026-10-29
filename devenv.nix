@@ -1,22 +1,19 @@
 {
   pkgs,
-  lib,
-  config,
-  inputs,
   ...
 }:
 
 {
   env.GREET = "devenv";
 
-  packages = [ 
-    pkgs.k3d 
-    pkgs.kubernetes-helm
-    pkgs.fluxcd
-    pkgs.kubectl
-    pkgs.k9s
-    pkgs.protobuf
-    pkgs.grpcurl 
+  packages = with pkgs; [ 
+    k3d
+    kubernetes-helm
+    fluxcd
+    kubectl
+    k9s
+    protobuf
+    grpcurl
   ];
 
   languages.rust = {

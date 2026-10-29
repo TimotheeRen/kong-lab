@@ -9,3 +9,4 @@ config:
   cookie_names:
     - jwt
 plugin: jwt
+disabled: true
