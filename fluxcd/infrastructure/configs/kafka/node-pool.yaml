@@ -1,0 +1,13 @@
+apiVersion: kafka.strimzi.io/v1
+kind: Kafka
+metadata:
+  name: kafka-node-pool
+  namespace: kafka
+spec:
+  replicas: 2
+  roles: 
+    - broker
+    - controlelr
+  storage: 
+  - id: 0
+    type: ephemeral
