@@ -17,7 +17,10 @@ async fn main() {
 
 async fn info() -> String {
     let producer: FutureProducer = ClientConfig::new()
-        .set("bootstrap.servers", "localhost:9092")
+        .set(
+            "bootstrap.servers",
+            "kafka-cluster-kafka-bootstrap.kafka.svc:9092",
+        )
         .set("message.timeout.ms", "1000")
         .create()
         .unwrap();
