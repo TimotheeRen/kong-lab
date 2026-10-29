@@ -1,4 +1,10 @@
+use std::time::Duration;
+
 use axum::{Router, routing::get};
+use rdkafka::{
+    ClientConfig,
+    producer::{FutureProducer, FutureRecord},
+};
 use tokio::net::TcpListener;
 
 #[tokio::main]
@@ -10,5 +16,19 @@ async fn main() {
 }
 
 async fn info() -> String {
+    let producer: FutureProducer = ClientConfig::new()
+        .set("bootstrap.servers", "localhost:9092")
+        .set("message.timeout.ms", "1000")
+        .create()
+        .unwrap();
+
+    producer
+        .send(
+            FutureRecord::to("events").key("event-1").payload("Hello"),
+            Duration::from_secs(1),
+        )
+        .await
+        .unwrap();
+
     "Mock server running on Axum: 0.8.9".to_string()
 }
