@@ -6,3 +6,8 @@ metadata:
 spec:
   kafka:
     version: 4.3.2
+    listeners:
+      - name: internal
+        port: 9092
+        type: internal
+        tls: true
