@@ -1,0 +1,7 @@
+apiVersion: kafka.strimzi.io/v1
+kind: Kafka
+metadata:
+  namespace: kafka
+spec:
+  kafka:
+    version: 4.3.2
