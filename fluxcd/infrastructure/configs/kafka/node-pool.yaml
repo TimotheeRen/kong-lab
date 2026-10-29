@@ -3,6 +3,8 @@ kind: KafkaNodePool
 metadata:
   name: kafka-node-pool
   namespace: kafka
+  labels:
+    strimzi.io/cluster: kafka-cluster
 spec:
   replicas: 2
   roles: 
