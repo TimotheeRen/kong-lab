@@ -14,6 +14,7 @@
     k9s
     protobuf
     grpcurl
+    telepresence2
   ];
 
   languages.rust = {

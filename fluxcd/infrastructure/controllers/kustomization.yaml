@@ -4,3 +4,4 @@ kind: Kustomization
 resources:
   - kong-operator.yaml
   - kafka-operator.yaml
+  - telepresence.yaml
