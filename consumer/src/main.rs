@@ -1,5 +1,5 @@
 use rdkafka::{
-    ClientConfig,
+    ClientConfig, Message,
     consumer::{Consumer, StreamConsumer},
 };
 
@@ -11,7 +11,7 @@ async fn main() {
             "bootstrap.servers",
             "kafka-cluster-kafka-bootstrap.kafka.svc:9092",
         )
-        .set("group.id", "consumer-group")
+        .set("group.id", "consumer-group-1")
         .set("auto.offset.reset", "earliest")
         .create()
         .expect("Can't initialize Kafka consumer.");
@@ -23,7 +23,7 @@ async fn main() {
     loop {
         match consumer.recv().await {
             Ok(message) => {
-                print!("Message: {:?}", message);
+                println!("Message: {:?}", message.payload());
             }
             Err(e) => {
                 eprintln!("Kafka error: {}", e);
