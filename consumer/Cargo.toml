@@ -1,0 +1,8 @@
+[package]
+name = "consumer"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+tokio = { version = "1.54.1", features = ["rt-multi-thread", "macros"] }
+rdkafka = "0.39.0"

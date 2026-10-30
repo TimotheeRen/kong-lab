@@ -4,3 +4,4 @@ resources:
   - nginx
   - http
   - grpc
+  - consumer
